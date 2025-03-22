@@ -6,8 +6,14 @@ import java.util.List;
 public class LogSimples implements Iterable<String>{
     private List<String> mensagens;
 
-    public LogSimples(){
+    private LogSimples(){
         mensagens = new LinkedList<>();
+    }
+
+    private static LogSimples instance = new LogSimples();
+
+    public static LogSimples getInstance(){
+        return instance;
     }
 
     public void log(String m){
