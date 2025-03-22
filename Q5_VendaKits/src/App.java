@@ -1,9 +1,9 @@
-import java.util.List;
+
 
 public class App {
     public static void main(String[] args){
         VendasFachada proc = VendasEmMemoria.getInstance();
-        List<IProduto> produtos = proc.buscarProdutos();
+
         Venda venda = proc.iniciarVenda();
         proc.registrarVenda(venda, 1, 1);
         proc.registrarVenda(venda, 2, 2);
