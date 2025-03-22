@@ -45,5 +45,6 @@ public class App {
             }
         }
         System.out.println("Fim");
+        s.close();
     }
 }
