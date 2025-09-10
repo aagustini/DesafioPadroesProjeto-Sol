@@ -10,10 +10,16 @@ public class App {
         boolean ligadoCs = false;
         boolean ligadoCm = false;
 
+        System.out.println("\n\t -1: habilita/desabilita extremos");
+        System.out.println("\t -2: habilita/desabilita somatório");
+        System.out.println("\t -3: habilita/desabilita média");            
+        System.out.println("\tnum: insere valor na lista");
+        System.out.println("\t  0: encerra aplicação");
+
         Scanner s = new Scanner(System.in);
         int valor = 0;
+
         while(true){
-            System.out.println("\nEntre um valor positivo maior que zero (0=fim):");
             valor = Integer.parseInt(s.nextLine());
             if (valor == 0){
                 break;

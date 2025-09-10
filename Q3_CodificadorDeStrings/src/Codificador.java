@@ -15,5 +15,4 @@ public class Codificador{
     public String deCodifica(String str){
         return codificador.deCodifica(str);
     }
-
 }
